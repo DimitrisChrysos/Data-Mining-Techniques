@@ -8,9 +8,7 @@ Both projects use Airbnb data for Athens (2019 & 2023) and explore data
 cleaning, visualisation, recommendation systems, sentiment analysis, and
 word-embedding-based similarity metrics.
 
-The work is implemented in Python through Jupyter Notebooks
-(`project1.ipynb` & `project2.ipynb`) \
-Following the specifications described in the official project descriptions.
+The work is implemented in Python through Jupyter Notebooks, following the specifications described in the official project descriptions.
 
 ## 📁 Repository Structure
 ```
@@ -23,8 +21,6 @@ Following the specifications described in the official project descriptions.
     │  └─ Project_02_Description.pdf      # Project 2 instructions
     └─ README.md
 ```
-
----
 
 # 📊 **Project 1 - Data Exploration & Recommendation System**
 
@@ -40,7 +36,8 @@ Following the specifications described in the official project descriptions.
 
 ### ✔ Exploratory analysis
 
-Includes: - Most common `room_type`
+Includes: 
+- Most common `room_type`
 - Price evolution across months
 - Top neighbourhoods by reviews
 - Neighbourhood listing frequency
@@ -49,16 +46,12 @@ Includes: - Most common `room_type`
 - Most common room type per neighbourhood
 - Most expensive room types
 - Folium map visualising listings
-- **Wordclouds across multiple textual fields
+- Wordclouds across multiple textual fields
 - Grouping of amenities into simplified categories
 - Neighbourhood price ranking & clustering
 - Additional custom insights
-- Host listing counts (top 10)
-- Side-by-side comparison between 2019 & 2023
 
----
-
-## **Part B --- Content-based Recommendation System**
+## **Part B - Content-based Recommendation System**
 
 ### ✔ Components implemented
 
@@ -68,38 +61,24 @@ Includes: - Most common `room_type`
 -   **TF-IDF vectorization**
 -   **Cosine similarity** matrix
 -   Dictionary of top-100 similar listings
--   Recommendation function:
-
-```{=html}
-<!-- -->
-```
-    recommend(item_id, N)
-
+-   Recommendation function
 -   Bigram collocations using `BigramCollocationFinder`
 
----
+# 🤖 **Project 2 - Sentiment Analysis, Classification & Similarity Metrics**
 
-# 🤖 **Project 2 --- Sentiment Analysis, Classification & Similarity Metrics**
-
----
-
-## **Part 1 --- Sentiment Annotation Using HuggingFace**
+## **Part 1 - Sentiment Annotation Using HuggingFace**
 
 ### ✔ Steps implemented:
-
 -   Preprocessing of comments
--   Use of a HuggingFace model (e.g., RoBERTa/BERT)
+-   Use of a HuggingFace model RoBERTa
 -   Chunked annotation for 2019 & 2023
 -   Production of datasets with columns:
     -   `id`
     -   `review`
     -   `sentiment`
 -   Sentiment comparison over time
--   (Bonus) sentiment per neighbourhood
 
----
-
-## **Part 2 --- Classifier Training & Evaluation**
+## **Part 2 - Classifier Training & Evaluation**
 
 ### ✔ Data Preparation
 
@@ -123,20 +102,18 @@ Includes: - Most common `room_type`
 -   10-fold cross-validation
 -   Metrics: Accuracy, Precision, Recall, F1-score
 
----
-
-## **Part 3 --- Word Similarity & Semantic Neighbourhoods**
+## **Part 3 - Word Similarity & Semantic Neighbourhoods**
 
 ### ✔ Implemented tasks:
 
 -   Word embeddings (trained or pre-trained)
 -   Cosine similarity between words
 -   For user-provided words + parameter N:
-    -   Build semantic neighbourhood
+    -   Build a semantic neighbourhood
     -   Compute three similarities:
-        1.  Maximum neighbourhood similarity
-        2.  Pearson-correlation-based similarity
-        3.  Sum of squared similarities
+        1.  Maximum similarity of neighborhoods
+        2.  Correlation of neighborhood similarities
+        3.  Sum of squared neighborhood similarities
 -   Visualization of neighbourhoods
 -   Analysis of how similarity changes with N
 
@@ -144,13 +121,13 @@ Includes: - Most common `room_type`
 
 # 📦 Technologies Used
 
--   Python 3.x
+-   Python
 -   pandas, numpy
--   matplotlib, seaborn
+-   matplotlib
 -   folium
 -   wordcloud
 -   scikit-learn
 -   HuggingFace Transformers
--   NLTK / spaCy
+-   NLTK
 -   gensim
 -   pickle
